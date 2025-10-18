@@ -1,0 +1,61 @@
+/* layout básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* menu lateral */
+.sidebar {
+  width: 220px;
+  background: #888;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu-item {
+  background: #444;
+  color: #fff;
+  border-radius: 15px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  user-select: none;
+}
+.menu-item:hover { background: #666; }
+
+/* área de conteúdo */
+.conteudo {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+  overflow-y: auto;
+}
+h1 {
+  font-family: "Comic Sans MS", cursive;
+  margin-top: 0;
+}
+.imagem {
+  width: 420px;
+  border-radius: 20px;
+  margin-top: 16px;
+  border: 4px solid #ccc;
+}
+.creditos {
+  font-size: 13px;
+  margin-top: 24px;
+  color: crimson;
+  font-weight: bold;
+}
+.creditos a {
+  color: crimson;
+  text-decoration: none;
+}
